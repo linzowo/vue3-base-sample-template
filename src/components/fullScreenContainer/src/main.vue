@@ -34,14 +34,12 @@
       initConfig() {
         const { dom } = this
         // const { width } = window.screen
-        // eslint-disable-next-line no-unused-vars
-        const [width /* , height */] = [1920, 1080]
+        const [width, height] = [1920, 1080]
 
         this.allWidth = width
 
         dom.style.width = `${width}px`
-        // dom.style.height = `100vh`
-        dom.style.height = `${document.body.offsetHeight}px`
+        dom.style.height = `${height}px`
       },
       setAppScale() {
         const { allWidth, dom } = this
