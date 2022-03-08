@@ -9,4 +9,9 @@ import 'ant-design-vue/dist/antd.css'
 import DvFullScreenContainer from '@/components/fullScreenContainer/index'
 // 支持SVG
 import 'virtual:svg-icons-register'
-createApp(App).use(router).use(Antd).use(piniaStore).use(DvFullScreenContainer).mount('#app')
+createApp(App)
+  .use(router)
+  .use(Antd)
+  .use(piniaStore)
+  .use(DvFullScreenContainer)
+  .mount('#app')
