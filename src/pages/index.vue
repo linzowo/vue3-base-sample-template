@@ -14,11 +14,4 @@
   <!-- Readme -->
 </template>
 
-<style lang="less" scoped>
-  .version {
-    display: inline-block;
-    padding: 6px;
-    margin-left: 6px;
-    border-radius: 10px;
-  }
-</style>
+<style lang="less" scoped></style>
