@@ -7,8 +7,9 @@
 <template>
   <div
     class="w-full h-full text-5xl leading-relaxed text-center text-green-500 dark:bg-slate-900"
-    >这是一个基础模板</div
   >
+    这是一个基础模板
+  </div>
 
   <!-- Readme -->
 </template>
