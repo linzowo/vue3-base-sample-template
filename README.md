@@ -108,7 +108,6 @@ import { ConfigMockPlugin } from './mock';
 import { ConfigVisualizerConfig } from './visualizer';
 import { ConfigCompressPlugin } from './compress';
 import { ConfigPagesPlugin } from './pages'
-import { ConfigMarkDownPlugin } from './markdown'
 import { ConfigRestartPlugin } from './restart'
 
 export function createVitePlugins(isBuild: boolean) {
@@ -125,8 +124,6 @@ export function createVitePlugins(isBuild: boolean) {
         ConfigPagesPlugin(),
         // 开启.gz压缩  rollup-plugin-gzip
         ConfigCompressPlugin(),
-        //支持markdown
-        ConfigMarkDownPlugin(),
         // 监听配置文件改动重启
         ConfigRestartPlugin(),
     ];

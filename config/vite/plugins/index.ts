@@ -11,7 +11,7 @@ import { AutoImportDeps } from './autoImport'
 import { ConfigMockPlugin } from './mock'
 import { ConfigVisualizerConfig } from './visualizer'
 import { ConfigCompressPlugin } from './compress'
-import { ConfigPagesPlugin } from './pages'
+import { ConfigPagesPlugin, ConfigLayoutPlugin } from './pages'
 import { ConfigRestartPlugin } from './restart'
 
 export function createVitePlugins(isBuild: boolean) {
@@ -26,6 +26,8 @@ export function createVitePlugins(isBuild: boolean) {
     AutoImportDeps(),
     // 自动生成路由
     ConfigPagesPlugin(),
+    // 向路由添加layout
+    ConfigLayoutPlugin(),
     // 开启.gz压缩  rollup-plugin-gzip
     ConfigCompressPlugin(),
     // 监听配置文件改动重启

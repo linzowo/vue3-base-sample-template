@@ -68,6 +68,7 @@
     "vite-plugin-restart": "^0.1.0",
     "vite-plugin-style-import": "^1.4.1",
     "vite-plugin-svg-icons": "^1.1.0",
+    "vite-plugin-vue-layouts": "^0.6.0",
     "vue-tsc": "^0.29.8"
   },
   "engines": {

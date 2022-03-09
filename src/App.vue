@@ -14,19 +14,7 @@
   // }
 
   // const isRouterAlive = ref(true)
-
-  // watch(
-  //   () => appStore.title,
-  //   () => {
-  //     const title: string = appStore.title
-  //     document.title = title
-  //       ? `${title} - ${import.meta.env.VITE_APP_TITLE}`
-  //       : import.meta.env.VITE_APP_TITLE
-  //   },
-  //   {
-  //     immediate: true,
-  //   }
-  // )
+  document.title = import.meta.env.VITE_APP_TITLE
 </script>
 
 <style>
@@ -35,5 +23,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
+    height: 100%;
   }
 </style>
